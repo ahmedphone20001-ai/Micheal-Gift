@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Windows Security</title>
+<style>
+body{
+    margin:0;
+    background:#000;
+    color:#00ff00;
+    font-family:Consolas,monospace;
+    overflow:hidden;
+}
+#terminal{
+    padding:20px;
+    font-size:22px;
+    white-space:pre-line;
+}
+</style>
+</head>
+<body>
+
+<div id="terminal"></div>
+
+<script>
+const lines = [
+"Connecting to Windows Security...",
+"Scanning C:\\Users\\...",
+"Checking system files...",
+"⚠ Suspicious files detected!",
+"Deleting memes...",
+"نجيب رقم امك",
+"Deleting Minecraft saves...",
+"Deleting Steam library...",
+"Fucking Jolie...",
+"",
+"KOS OMK YA 3ARS"
+];
+
+let i = 0;
+const terminal = document.getElementById("terminal");
+
+function typeLine() {
+    if (i < lines.length) {
+        terminal.innerHTML += lines[i] + "\n";
+        i++;
+        setTimeout(typeLine, 900);
+    }
+}
+
+typeLine();
+</script>
+
+</body>
+</html>
